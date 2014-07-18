@@ -1,0 +1,22 @@
+#!/system/bin/sh
+#
+# AK Tuning
+# @anarkia1976
+#
+
+echo "Let's go AK ..."
+
+##################################################################
+### set default governor
+###
+gov="stockdemand"
+echo "$gov" > /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
+echo "$gov" > /sys/devices/system/cpu/cpu1/cpufreq/scaling_governor
+echo "$gov" > /sys/devices/system/cpu/cpu2/cpufreq/scaling_governor
+echo "$gov" > /sys/devices/system/cpu/cpu3/cpufreq/scaling_governor
+
+##################################################################
+### set hotplug tunables
+###
+#echo "500" > /sys/module/msm_hotplug/down_lock_duration
+#echo "2500" > /sys/module/msm_hotplug/boost_lock_duration

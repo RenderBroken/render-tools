@@ -1,0 +1,16 @@
+fastboot erase boot
+fastboot erase cache
+fastboot erase recovery
+fastboot erase system
+fastboot erase userdata
+
+fastboot flash bootloader bootloader-mako-makoz20i.img
+fastboot reboot-bootloader
+fastboot flash radio radio-mako-m9615a-cefwmazm-2.0.1700.84.img
+fastboot reboot-bootloader
+fastboot –w update image-occam-jwr66v.zip
+
+fastboot oem lock
+fastboot reboot-bootloader
+
+fastboot oem unlock

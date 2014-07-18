@@ -1,0 +1,21 @@
+fastboot oem unlock
+
+fastboot flash boot boot.img
+
+Ps:
+fastboot flash userdata userdata.img
+or
+fastboot flash userdata userdata_64G.img
+
+fastboot flash system system.img
+fastboot flash recovery recovery.img
+fastboot flash cache cache.img
+fastboot flash modem NON-HLOS.bin
+fastboot flash sbl1 sbl1.mbn
+fastboot flash dbi sdi.mbn
+fastboot flash aboot emmc_appsboot.mbn
+fastboot flash rpm rpm.mbn
+fastboot flash tz tz.mbn
+fastboot flash LOGO logo.bin
+
+fastboot reboot

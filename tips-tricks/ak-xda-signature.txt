@@ -1,0 +1,24 @@
+[size=1][b]I do NOT answer technical questions via PM. Post your question in the correct thread if you want a response.[/b]
+[img]http://x.co/rHyS[/img]
+[floatleft][b]Samsung Galaxy Nexus GT-i9250M
+Recovery:[/b] [url=x.co/rMOn]ClockworkMod Touch 6.0.2.7 maguro[/url]
+[b]ROM:[/b] [url=x.co/rHnt]takju JOP40D (JB 4.2.1)[/url]
+[b]Kernel:[/b] [url=x.co/rHnv]3.0.57-franco.Kernel-tuna-nightly-r361[/url]
+[b]Radio:[/b] [url=x.co/rHoL]I9250UILH1[/url][b],[/b] [url=x.co/rHo7]JOP40D RIL[/url]
+[b]Bootloader:[/b] [url=x.co/rHnt]PRIMELC03[/url]
+[/floatleft][floatleft][img]http://x.co/rHyS[/img]
+
+[/floatleft][floatleft][b]Asus Nexus 7 ME370T
+Recovery:[/b] [url=x.co/sSGb]ClockworkMod Touch 6.0.2.7 grouper[/url]
+[b]ROM:[/b] [url=x.co/rHoZ]nakasi JOP40D (JB 4.2.1)[/url]
+[b]Kernel:[/b] [url=x.co/rHoc]3.1.10-franco.Kernel-grouper-nightly-r42[/url]
+[b]Bootloader:[/b] [url=x.co/rHoZ]4.13[/url]
+[/floatleft][floatleft][img]http://x.co/rHyS[/img]
+
+[/floatleft][floatleft][b]Links:[/b]
+[url=x.co/rHoo]My GN f.K Settings[/url]
+[url=x.co/rHot]N7 BootUnlocker Script Zip[/url]
+[url=x.co/rHp6]Holo Notification Toggle Icons[/url]
+[url=x.co/rRyr]Android Image Kitchen[/url]
+[url=x.co/rHpF]f.Ku Emergency Reset Zip[/url]
+[/floatleft][/size]

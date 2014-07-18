@@ -1,0 +1,51 @@
+
+The base is to know linux kernel compilation and a bit of imagination.
+
+Step 1
+
+We create the image that will be displayed at boot time, to do this you can use a free tool such as Gimp:
+- create an image in any format (for ex. png), the important thing is size (720x1280)
+- goto menu/image/mode/Indexed -> select Generate Optimum Palette -> Maximum number of Color -> 224
+- goto file/export -> Set Name = logo_linux_clut224.ppm -> Type = PNM Image (*.pnm) -> Click Export -> Data formatting = Ascii -> Save
+
+Step 2
+
+At this point, you must import your file in the specific directory of the kernel:
+- cp -vr drivers/video/logo/logo_linux_clut224.ppm drivers/video/logo/logo_linux_clut224.ppm.bck
+- cp -vr /<your-dir>/logo_linux_clut224.ppm drivers/video/logo/logo_linux_clut224.ppm
+
+Step 3
+
+Now let's change the default configuration to compile with what you need, add this line to .config:
+
+#
+# Boot logo and Framebuffer
+#
+CONFIG_CMDLINE="console=ttyS0,115200 androidboot.console=ttyS0 fbcon=rotate:0 mem=1G vmalloc=256M omap_wdt.timer_margin=30 no_console_suspend"
+CONFIG_BOOT_PRINTK_DELAY=y
+CONFIG_CMDLINE_FORCE=y
+CONFIG_CMDLINE_EXTEND=y
+CONFIG_VT=y
+CONFIG_VT_CONSOLE=y
+CONFIG_DUMMY_CONSOLE=y
+CONFIG_HW_CONSOLE=y
+CONFIG_CONSOLE_TRANSLATIONS=y
+CONFIG_LOGO=y
+# CONFIG_LOGO_LINUX_VGA16 is not set
+CONFIG_LOGO_LINUX_CLUT224=y
+# CONFIG_LOGO_LINUX_MONO is not set
+CONFIG_FRAMEBUFFER_CONSOLE=y
+CONFIG_FRAMEBUFFER_CONSOLE_DETECT_PRIMARY=y
+# CONFIG_FRAMEBUFFER_CONSOLE_ROTATION is not set
+# CONFIG_FONTS is not set
+# CONFIG_FONT_4x6 is not set
+# CONFIG_FONT_6x11 is not set
+CONFIG_FONT_8x8=y
+# CONFIG_FONT_8x16 is not set
+# CONFIG_CONSOLE_EARLYSUSPEND is not set
+
+Step 4
+
+Recompile your kernel and initramfs.
+
+Now have fun.
